@@ -142,7 +142,7 @@
                   <td>6pm</td><tr>
                   </tr>
             </table>
-              <a href="booking.html?movie=ACT" class="button">Make a Booking</a>
+              <a href="booking.php?movie=ACT" class="button">Make a Booking</a>
             </div>
           </div>
           <div class="card">
@@ -168,7 +168,7 @@
                   <td>Sat-Sun</td>
                   <td>12pm</td>
             </table>
-              <a href="booking.html?movie=FAM" class="button">Make a Booking</a>
+              <a href="booking.php?movie=FAM" class="button">Make a Booking</a>
             </div>
           </div>
           <div class="card">
@@ -194,7 +194,7 @@
                   <td>Sat-Sun</td>
                   <td>9pm</td>
             </table>
-              <a href="booking.html?movie=AHF" class="button">Make a Booking</a>
+              <a href="booking.php?movie=AHF" class="button">Make a Booking</a>
             </div>
           </div>
           <div class="card">
@@ -220,7 +220,7 @@
                   <td>Sat-Sun</td>
                   <td>3pm</td>
             </table>
-              <a href="booking.html?movie=RMC" class="button">Make a Booking</a>
+              <a href="booking.php?movie=RMC" class="button">Make a Booking</a>
             </div>
           </div>
       </section>

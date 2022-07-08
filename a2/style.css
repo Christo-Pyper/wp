@@ -1,1 +1,276 @@
 /* Insert your styles here */
+ @font-face {
+     src: url(../../media/Longline.ttf);
+     font-family: title;
+}
+ @font-face {
+     src: url(../../media/Staatlitches.ttf);
+     font-family: rest;
+}
+ @keyframes fadeIn {
+     0% {
+         opacity: 0;
+    }
+     100% {
+         opacity: 1;
+    }
+}
+ .script{
+     animation: fadeIn 5s;
+     font-family: rest;
+     font-size: 1vw;
+     margin-left: 18%;
+}
+ .subtitle{
+     font-family: rest;
+     font-size: 2vw;
+     text-align: center;
+}
+ header{
+     animation: fadeIn 1.5s;
+     font-size: 5vw;
+     font-family: title;
+     width: 50%;
+     margin: 10%;
+     margin-left: 34%;
+}
+ html{
+     background-color: #000;
+     color: white;
+     scroll-behavior: smooth !important;
+     overflow-y: scroll;
+}
+ section{
+     background-image: url('../../media/Background.jpg');
+     position: static;
+     min-width: 100vw;
+     min-height: 100vh;
+     margin: 0 auto;
+     font-family: rest;
+     font-size: 1.8vw;
+     text-align: center;
+}
+ form{
+     position: static;
+     margin: s0 auto;
+     font-family: rest;
+     font-size: 1.8vw;
+     text-align: center;
+}
+ select{
+     display: inline-block;
+     width: 20em;
+     height: 3em;
+     font-family: rest;
+     background-color: #0062ad;
+}
+ input[type="radio"]{
+     display: none;
+}
+ input[type="radio"]:checked + label{
+     background-color: white;
+     color: #000;
+     transform: translateY(4px);
+     box-shadow: 0 2px #668;
+}
+ .radio label{
+     color: #0062ad;
+     border: 3px solid #0062ad;
+     border-radius: 10px;
+     padding: 5px;
+     box-shadow: 0 6px #999;
+}
+ .radio label:hover{
+     background-color: #3146b0;
+     color: white;
+}
+ .LogoHead{
+     float: left;
+     margin: 0.6%;
+     width: 2em;
+}
+ .LogoBar{
+     float: left;
+     margin: 0.6%;
+     width: 8em;
+}
+ .Seats{
+     font-size: 1vw;
+     display: inline-block;
+     width: 25vw;
+     height: auto;
+     padding: 2vw;
+     border: 4px solid white;
+     border-radius: 1vw 1vw 1vw 1vw;
+     margin: 2vw;
+}
+ .Seats img{
+     width: 25vw;
+     height: 25vw;
+}
+ .bar {
+     position: sticky;
+     top: 0;
+     width: 90%;
+     margin: 0 auto;
+     background-color: #0062ad;
+}
+ .bar::after{
+     content: '';
+     display: table;
+     clear: both;
+}
+ nav ul{
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     text-align: center;
+}
+ nav li{
+     float: left;
+     margin: 2em;
+     position: relative;
+}
+ nav a:hover{
+     color: #FFF
+}
+ nav a::before{
+     height: 5px;
+     background-color: #fff;
+     position: absolute;
+     display: inline;
+     content: '';
+     width: 0%;
+     margin-top: 2.6vw;
+}
+ nav a:hover::before{
+     width: 100%;
+}
+ nav a{
+     color: #000;
+     text-decoration: none;
+     font-family: rest;
+     font-size: 1.5vw;
+}
+ th, td {
+     border: 1px solid;
+}
+ table{
+     border: 3px solid;
+     border-radius: 10px 10px 10px 10px;
+}
+ .card:hover {
+     cursor: pointer;
+     transition-delay: 0.15s;
+     transform: rotateY(180deg);
+}
+ .card {
+     display: inline-block;
+     height: 1075px;
+     width: 716px;
+     position: relative;
+     transition: transform 1s;
+     transform-style: preserve-3d;
+     perspective: 800px;
+}
+ .front, .back {
+     height: 100%;
+     width: 100%;
+     border-radius: 2rem;
+     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+     position: absolute;
+     backface-visibility: hidden;
+}
+ .back {
+     color: #000;
+     font-size: 1.5vw;
+     background-color: #fff;
+     transform: rotateY(180deg);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+ .poster{
+     position: relative;
+     border-radius: 2rem;
+     height: 100%;
+     width: 100%;
+}
+ .button {
+     background-color: #4CAF80;
+     border: none;
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 1.5vw;
+     margin: 4px 2px;
+     cursor: pointer;
+}
+ footer p{
+     text-align: center;
+     font-size: 1.8vw;
+     font-family: rest;
+}
+ footer h1{
+     text-align: center;
+     font-size: 1.8vw;
+     font-family: rest;
+}
+ .line {
+     position: relative;
+     width: 32vw;
+     height: 0px;
+}
+ .inline{
+     width: 30em;
+     height: 10em;
+}
+ .line::before, .line::after {
+     content: '';
+     position: absolute;
+     width: calc(100% + 6px);
+     height: calc(100% + 6px);
+     top: -3px;
+     left: -3px;
+     background: linear-gradient(90deg, #fff, #0430c2, #fff, #0430c2);
+     background-size: 300%;
+     animation: border 20s linear infinite;
+     border-radius: 2rem;
+     box-shadow: 0 0 50px rgb(255, 255, 255);
+}
+ .line::after {
+     filter: blur(50px);
+}
+ @keyframes border {
+     0%, 100% {
+         background-position: 0 0;
+    }
+     50% {
+         background-position: 300%;
+    }
+}
+ .bookingHead{
+     height: auto;
+     margin: 0 auto;
+     font-family: rest;
+     text-align: center;
+}
+ .bookingHead div{
+     display: flex;
+     justify-content: center;
+}
+ .bookingMain section{
+     align-items: center;
+}
+ iframe{
+     display: inline-block;
+}
+ .posterBookingPage{
+     display: inline-block;
+     width: 220px;
+     height: 315px;
+}
+ 
