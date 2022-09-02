@@ -269,15 +269,12 @@
       <fieldset>
         <legend>Personal Details</legend>
         <input type='text' name="user[name]" id="name" placeholder="Name" /><br>
-        <input type='email' name="user[email]" id="email" value='' placeholder="Email" /><br>
-        <input type='tel' name="user[mobile]" id="mobile" value='' placeholder="Mobile" /><br>
+        <input type='email' name="user[email]" id="email" placeholder="Email" /><br>
+        <input type='tel' name="user[mobile]" id="mobile" placeholder="Mobile" /><br>
 
         <input type="button" class="buttons" id='remember' value="Remember Me" onclick="changeButton()"></input>
+        <script type="text/javascript"> autoFill(); </script>
 
-
-        <script type="text/javascript">
-          autoFill();
-        </script>
       </fieldset>
 
       <fieldset>

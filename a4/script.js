@@ -1,10 +1,11 @@
 /* Insert your javascript here */
 
-
 function autoFill(){
-  document.getElementById("email").setAttribute('value', localStorage.getItem('email'));
-  document.getElementById("name").setAttribute('value', localStorage.getItem('name'));
-  document.getElementById("mobile").setAttribute('value', localStorage.getItem('mobile'));
+  if(localStorage.getItem('email') !== null && localStorage.getItem('name') !== null && localStorage.getItem('mobile') !== null){
+    document.getElementById("email").setAttribute('value', localStorage.getItem('email'));
+    document.getElementById("name").setAttribute('value', localStorage.getItem('name'));
+    document.getElementById("mobile").setAttribute('value', localStorage.getItem('mobile'));
+  }
 }
 
 function saveDetails(){

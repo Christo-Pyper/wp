@@ -1,0 +1,19 @@
+.buttons {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #0062ad;
+  box-shadow: 0 6px #999;
+  border: none;
+  border-radius: 6px;
+}
+
+.buttons:active {
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
+.buttons:hover{
+  background-color: #5a97fa;
+}
