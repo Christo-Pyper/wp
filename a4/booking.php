@@ -181,6 +181,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
   <title>Lunardo Booking Page</title>
   <style>
     body {
@@ -269,7 +270,11 @@
         <legend>Personal Details</legend>
         <input type='text' name="user[name]" id="name" placeholder="Name" /><br>
         <input type='email' name="user[email]" id="email" value='' placeholder="Email" /><br>
-        <input type='tel' name="user[mobile]" id="mobile" value='' placeholder="Mobile" />
+        <input type='tel' name="user[mobile]" id="mobile" value='' placeholder="Mobile" /><br>
+
+        <input type="button" class="buttons" id='remember' value="Remember Me" onclick="changeButton()"></input>
+
+
         <script type="text/javascript">
           autoFill();
         </script>
@@ -277,8 +282,8 @@
 
       <fieldset>
         <legend>Submit Options</legend>
-        <button onclick="saveDetails()" id="submitCS" name='submitCS'>Order<br>Client-Side Validation</button>
-        <button onclick="saveDetails()" id="submitSS" name='submitSS'>Order<br>Server-Side Validation</button>
+        <button id="submitCS" name='submitCS'>Order<br>Client-Side Validation</button>
+        <button id="submitSS" name='submitSS'>Order<br>Server-Side Validation</button>
       </fieldset>
     </form>
 

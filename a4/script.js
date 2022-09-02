@@ -20,3 +20,13 @@ function saveDetails(){
 function deleteDetails(){
   localStorage.clear();
 }
+
+function changeButton(){
+  if(document.getElementById("remember").value === "Remember Me"){
+    document.getElementById("remember").setAttribute('value', "Forget");
+    saveDetails();
+  }else{
+    document.getElementById("remember").setAttribute('value', "Remember Me");
+    deleteDetails();
+  }
+}
