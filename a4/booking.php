@@ -1,5 +1,4 @@
 <?php
-
   $moviesObject = [
     'ACT' => [
       'title' => 'Top Gun Maverick',
@@ -181,7 +180,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script type="text/javascript" src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link href="style.css" rel="stylesheet" type="text/css">
   <title>Lunardo Booking Page</title>
   <style>
     body {
@@ -289,6 +288,12 @@
   <hr>
 
   <footer>
+    <fieldset>
+      <legend>Movie Reminders</legend>
+      <input type='text' name="Name" id="name" placeholder="Name" required/><br>
+      <input type='email' name="Email" id="email" placeholder="Email" required/><br>
+      <input type='tel' name="Mobile" id="mobile" placeholder="Mobile" required/><br>
+    </fieldset>
     Assignment 4 Fallback Template for Web Programming SP2 2022
     <pre>
 $movie <?= $movie ?>
@@ -301,6 +306,8 @@ GET contains:
 <?php print_r($_GET); ?>
 POST contains:
 <?php print_r($_POST); ?>
+userData contains:
+<?php print_r($userData); ?>
 SESSION contains:
 <?php print_r($_SESSION); ?>
     </pre>
